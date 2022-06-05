@@ -1,0 +1,35 @@
+.projects {
+    height: 100vh;
+    background-color: #e0e0e0;
+    background-attachment: fixed;
+    background-size: 100%;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    background-position: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.projects-project {
+    display: flex;
+    overflow-x: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.projects-project::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow-left {
+    position: absolute;
+    left: 20px;
+    color: #eee;
+}
+.arrow-right {
+    position: absolute;
+    right: 20px;
+    color: #eee;
+}

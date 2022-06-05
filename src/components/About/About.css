@@ -1,0 +1,73 @@
+.about {
+    background-color: #F1C40F;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    cursor: pointer;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    scroll-snap-align: start;
+}
+
+.about h1 {
+    font-size: 70px;
+    text-shadow: 3px 3px 4px rgb(113, 110, 110);
+    color: #fff5b3;
+}
+
+.about h1:hover {
+    text-shadow: 3px 3px 4px rgb(63, 62, 62);
+}
+
+.about-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-card img {
+    width: 400px;
+    fill: #f4dc40;  
+    background-color: #ffed78;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    transform: rotate(2deg);
+    box-shadow: 1px 2px 10px rgb(70, 70, 70);
+    transition: all 400ms ease;
+}
+
+.about-card img:hover {
+    box-shadow: 1px 2px 20px rgb(70, 70, 70);
+    transform: translate3d(-10px, 0px, 10px);
+}
+
+.about-para {
+    line-height: 1.4;
+    width: 50%;
+    font-size: 60px;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    height: 100vh;
+    overflow-y: scroll;
+    color: #fff;
+}
+.about-para > span {
+    color: rgb(255, 214, 102);
+    transition: all 0.35s ease;
+    background-image: linear-gradient(to left,#fff, #fff 50%, rgb(255, 214, 102) 50%);  
+    background-position: 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+}
+
+.about-para > span:hover {
+    color: #eee;
+    background-position: 100%;
+}
+
+.about-para::-webkit-scrollbar {
+    display: none;
+}
+
+

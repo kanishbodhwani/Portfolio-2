@@ -1,0 +1,97 @@
+.intro {
+    height: 100vh;
+    background-color: #6C63FF ;
+    background-attachment: fixed;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-position: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+}
+
+.name {
+    text-align: center; 
+}
+
+.name h1 {
+    font-size: 80px;
+    color: rgb(235, 247, 255);
+}
+
+.name h2 {
+    color:rgb(183, 226, 255);
+    font-size: 30px;    
+    transform: translate(0%, -100%);
+}
+
+.profession img {
+    height: 70vh;   
+}
+
+.profession img , .profession-text {
+    margin: 0 10px; 
+}
+
+.profession {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0%, -10%);  
+}
+
+.profession-text {
+    color: #eee;
+    line-height: 1.5;
+    width: 40%;
+    font-size: 30px;
+    font-weight: 600;
+    transform: translate(0%, -5%);
+}
+
+.profession-text span {
+    font-weight: bold;
+    color: #b5c0ff;
+    text-shadow: 1px 1px 1px rgb(25, 25, 25);
+}
+
+.socialsDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 20%; 
+    align-items: center;
+}
+
+.icon {
+    transition: all 300ms ease;
+}
+
+.icon:hover {
+    transform: translateY(-30%);
+}
+
+@media only screen and (max-width: 1048px) {
+    .socialsDiv {
+        width: 20%; 
+    }
+    .profession {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .profession-text {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .profession {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .profession-text {
+        width: 100%;
+    }
+}
